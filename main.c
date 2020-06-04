@@ -11,7 +11,6 @@
 */
 void zeroing(char *bin, char *hex)
 {
-	printf("zeroing\n");
 	for (int i = 0; i <= MAX_LENGHT_OF_BIN + 3; i++)
 		bin[i] = '\0';
 	for (int i = 0; i <= MAX_LENGHT_OF_BIN / 4 + 1; i++)
@@ -26,7 +25,6 @@ void zeroing(char *bin, char *hex)
 */
 int check_bin(FILE *file, char *bin)
 {
-	printf("check_bin\n");
 	if (!strlen(bin))
 		return INCORRECT_INPUT;
 	if (strlen(bin) > MAX_LENGHT_OF_BIN + 1)
